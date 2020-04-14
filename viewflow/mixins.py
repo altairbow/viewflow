@@ -344,7 +344,7 @@ class TaskReporterMixin:
 
             activation.task.data = {
                 'time': datetime.now().strftime('%Y/%m%d %H:%M:%S'),
-                'user': self.request.user,
+                'user': str(self.request.user),
                 'msg': msg
             }
 
